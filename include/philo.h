@@ -1,10 +1,14 @@
 #ifndef PHILO_H
 # define PHILO_H
+
 # include <pthread.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <sys/time.h>
 # include <unistd.h>
+
+// -- my libs -- //
+# include "../libft/libft.h"
 
 # define PHILO_MAX 200
 
@@ -28,6 +32,7 @@ typedef struct s_philo
 	pthread_mutex_t	*dead_lock;
 	pthread_mutex_t	*meal_lock;
 }					t_philo;
+
 typedef struct s_program
 {
 	int				dead_flag;

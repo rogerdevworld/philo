@@ -22,8 +22,8 @@ OBJS = $(SRCS:$(SRC_DIR)%.c=$(OBJ_DIR)/%.o)
 BSRC_DIR = ./src/bonus/
 OBJ_DIR = ./obj
 
-#BSRCS =	
-#BOBJS = $(BSRCS:$(BSRC_DIR)%.c=$(OBJ_DIR)/%.o)
+BSRCS =	
+BOBJS = $(BSRCS:$(BSRC_DIR)%.c=$(OBJ_DIR)/%.o)
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -I./include
@@ -40,7 +40,7 @@ ifdef BONUS
 else
 	OBJECTS = $(OBJS)
 	HEADER = ./include/philo.h
-	SRC_DIR = ./src/mandatory/
+	SRC_DIR = ./src/
 endif
 
 RED     = \033[31m
